@@ -32,24 +32,7 @@ let Bogey: Sprite = null
 let projectile: Sprite = null
 let SpacePlane: Sprite = null
 scene.setBackgroundColor(15)
-SpacePlane = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . 6 6 6 6 . . . . . . . . . 
-    . . . 6 8 8 6 6 . . . . . . . . 
-    . . . 6 6 8 8 6 6 6 . . . . . . 
-    . . . . 6 6 8 8 8 6 6 . . . . . 
-    . . a a a a a a a a a a a a . . 
-    . 2 a a 9 9 9 9 2 2 2 2 2 a 7 . 
-    5 2 a a 9 9 9 9 2 6 6 6 2 a 7 7 
-    5 2 a a 9 9 9 9 2 2 2 2 2 a 7 7 
-    5 2 a a 9 9 9 9 9 9 9 9 9 a 7 7 
-    . 2 a a 9 9 9 9 9 9 9 9 9 a 7 . 
-    . . a a a a a a a a a a a a . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
+SpacePlane = sprites.create(assets.image`BlueBaumer`, SpriteKind.Player)
 controller.moveSprite(SpacePlane, 200, 200)
 SpacePlane.setStayInScreen(true)
 info.setLife(5)
