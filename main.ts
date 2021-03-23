@@ -36,9 +36,6 @@ SpacePlane = sprites.create(assets.image`galgaPlane1`, SpriteKind.Player)
 controller.moveSprite(SpacePlane, 200, 200)
 SpacePlane.setStayInScreen(true)
 info.setLife(5)
-if (SpacePlane.vx < 200) {
-    SpacePlane.image.flipX()
-}
 game.onUpdateInterval(1000, function () {
     Bogey = sprites.create(assets.image`galgaEnemy1`, SpriteKind.Enemy)
     Bogey.setVelocity(-100, 0)
